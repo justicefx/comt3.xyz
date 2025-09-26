@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comt3.xyz - Web3 Marketing & Creator Management Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for professional feel and sticky CTA */
+        :root {
+            --primary-color: #4f46e5; /* Deep Indigo for accent */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fcfcfc; /* Off-white, clean background */
+            color: #1f2937; /* Dark Gray for main text */
+        }
+        .cta-button {
+            background-color: var(--primary-color);
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #4338ca; /* Darker shade on hover */
+            box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.4);
+            transform: translateY(-2px);
+        }
+        /* Sticky Header Shadow */
+        .sticky-header {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+        }
+        /* Utility for Icon Placeholders (using Lucide SVGs) */
+        .icon-svg {
+            stroke: var(--primary-color);
+            stroke-width: 1.5;
+        }
+        /* Mobile-friendly content container */
+        .content-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem; /* Consistent padding */
+        }
+    </style>
+    <script>
+        // Configure Tailwind to use our custom color for easier use
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            '500': '#4f46e5', // Deep Indigo
+                            '600': '#4338ca',
+                        },
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Inter', 'sans-serif'], // Use Inter for both for maximum consistency and clarity
+                    },
+                },
+            }
+        }
+
+        // Script for sticky header logic
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('main-header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-lg');
+            } else {
+                header.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</head>
+<body>
+
+    <!-- 1. STICKY HEADER / NAVIGATION -->
+    <header id="main-header" class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm sticky-header transition-shadow duration-300">
+        <div class="content-container flex justify-between items-center py-4">
+            <!-- Logo/Brand Name -->
+            <a href="#" class="text-2xl font-extrabold text-gray-900 tracking-tight">
+                Comt3.<span class="text-primary-500">xyz</span>
+            </a>
+
+            <!-- Primary CTA - ALWAYS VISIBLE -->
+            <a href="https://calendly.com/justiceuwakwe/30min" target="_blank" class="cta-button text-white font-semibold px-4 py-2 rounded-xl text-sm md:text-base shadow-lg hover:shadow-xl transition-all duration-300">
+                Book a Strategy Call
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. HERO SECTION: The Trust Statement -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="content-container text-center">
+                <!-- Headline: Clear, Concise Positioning -->
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4 text-gray-900">
+                    <span class="text-primary-500">Web3 Visibility, Done.</span> You Focus on Building.
+                </h1>
+
+                <!-- Sub-Headline: Emphasize Full Process -->
+                <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                    We are the full-funnel Web3 marketing platform, managing creator recruitment, strategic content scripting, performance tracking, and targeted advertising—so your founders' time is spent shipping code, not chasing ROI.
+                </p>
+
+                <!-- Primary CTA - Centerpiece -->
+                <a href="https://calendly.com/justiceuwakwe/30min" target="_blank" class="cta-button inline-block text-white font-bold text-xl px-10 py-4 rounded-xl shadow-2xl transition-all duration-500 hover:shadow-primary-500/50">
+                    Book Your Strategy Call Today &rarr;
+                </a>
+            </div>
+        </section>
+
+        <!-- 2. SECTION 1: Our Full-Funnel Expertise (Authority) -->
+        <section id="expertise" class="py-16 md:py-24 bg-gray-50">
+            <div class="content-container">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900">
+                    Authority Through Process: Our Three Core Pillars
+                </h2>
+
+                <div class="grid md:grid-cols-3 gap-10">
+
+                    <!-- Pillar 1: Creator/KOL Management -->
+                    <div class="bg-white p-6 md:p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300 border-t-4 border-primary-500">
+                        <!-- Icon Placeholder: Users -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="icon-svg mb-4">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">Elite Creator & KOL Management</h3>
+                        <p class="text-gray-600">
+                            We don't just hire names; we recruit, vet, and manage creators and influencers who are <strong class="font-bold">deeply specific</strong> to your project's niche. Our process ensures authentic engagement and long-term brand alignment, not fleeting hype.
+                        </p>
+                    </div>
+
+                    <!-- Pillar 2: Content & Scripting -->
+                    <div class="bg-white p-6 md:p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300 border-t-4 border-primary-500">
+                        <!-- Icon Placeholder: Pen Tool -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="icon-svg mb-4">
+                            <path d="M12 20h9"></path>
+                            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4Z"></path>
+                            <path d="m19 19-5-5"></path>
+                        </svg>
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">Strategic Content & Scripting Mastery</h3>
+                        <p class="text-gray-600">
+                            Every piece of content is engineered for conversion. We craft scripts and messages that clearly articulate your project vision, address market skepticism, and build a cohesive narrative that cuts through the noise.
+                        </p>
+                    </div>
+
+                    <!-- Pillar 3: Tracking & Optimization -->
+                    <div class="bg-white p-6 md:p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300 border-t-4 border-primary-500">
+                        <!-- Icon Placeholder: Activity/Chart -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="icon-svg mb-4">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">Robust Tracking & ROI Maximization</h3>
+                        <p class="text-gray-600">
+                            We deploy a robust system for performance tracking, creator follow-ups, and targeted ad services. This data-driven feedback loop ensures your marketing spend maximizes verifiable return on investment (ROI).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="text-center mt-12">
+                    <a href="https://calendly.com/justiceuwakwe/30min" target="_blank" class="cta-button inline-block text-white font-semibold px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 text-lg">
+                        Ready for a Proven Funnel? Book a Strategy Call
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. SECTION 2: The Founder's Benefit (Relief) -->
+        <section id="relief" class="py-16 md:py-24 bg-white">
+            <div class="content-container grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Pain Points & Relief -->
+                <div>
+                    <span class="text-primary-500 font-semibold uppercase tracking-wider text-sm mb-3 block">For Founders, By Founders</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-6 text-gray-900">
+                        Stop Wasting Time on Poor Results & Start Building.
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-8">
+                        The biggest drain on a Web3 project isn't the development cost—it's the lost time and uncertain outcomes from fragmented marketing. We eliminate the chaos.
+                    </p>
+
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <!-- Checkmark Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="min-w-[24px] mr-3 mt-1">
+                                <path d="M20 6 9 17l-5-5"></path>
+                            </svg>
+                            <div>
+                                <strong class="text-gray-900">No More Vague KPIs:</strong> We provide transparent, measurable results directly tied to your growth goals.
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <!-- Checkmark Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="min-w-[24px] mr-3 mt-1">
+                                <path d="M20 6 9 17l-5-5"></path>
+                            </svg>
+                            <div>
+                                <strong class="text-gray-900">One Reliable Partner:</strong> Outsource your entire visibility funnel, from talent to treasury, to a single, accountable team.
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <!-- Checkmark Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="min-w-[24px] mr-3 mt-1">
+                                <path d="M20 6 9 17l-5-5"></path>
+                            </svg>
+                            <div>
+                                <strong class="text-gray-900">Maximum Focus:</strong> Free up your core team to accelerate product development and deliver on your roadmap.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Graphic Placeholder (for authority) -->
+                <div class="hidden lg:block">
+                    <img src="https://placehold.co/600x400/4f46e5/ffffff?text=Strategy+Visual+Placeholder" alt="Web3 Marketing Strategy Funnel" class="rounded-2xl shadow-2xl w-full h-auto" onerror="this.onerror=null; this.src='https://placehold.co/600x400/4f46e5/ffffff?text=Strategy+Visual+Placeholder';">
+                </div>
+            </div>
+            <!-- REMOVED CTA BUTTON HERE TO REDUCE REDUNDANCY -->
+        </section>
+
+        <!-- 4. SECTION 3: Social Proof / Credentials -->
+        <section id="social-proof" class="py-16 md:py-20 bg-gray-50">
+            <div class="content-container">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900">
+                    Trusted by Innovators in the Web3 Space
+                </h2>
+
+                <!-- Statistics Section: NEW ADDITION -->
+                <div class="grid grid-cols-3 gap-6 text-center mb-16">
+                    <!-- Stat 1: Creators -->
+                    <div class="bg-white p-4 sm:p-6 rounded-xl shadow-md border-b-2 border-primary-500">
+                        <p class="text-3xl sm:text-4xl font-extrabold text-primary-500">500+</p>
+                        <p class="text-sm sm:text-base text-gray-600 font-medium mt-1">Verified Creators & KOLs</p>
+                    </div>
+                    <!-- Stat 2: ROI -->
+                    <div class="bg-white p-4 sm:p-6 rounded-xl shadow-md border-b-2 border-primary-500">
+                        <p class="text-3xl sm:text-4xl font-extrabold text-primary-500">250%+ </p>
+                        <p class="text-sm sm:text-base text-gray-600 font-medium mt-1">Average Campaign ROI</p>
+                    </div>
+                    <!-- Stat 3: Visibility -->
+                    <div class="bg-white p-4 sm:p-6 rounded-xl shadow-md border-b-2 border-primary-500">
+                        <p class="text-3xl sm:text-4xl font-extrabold text-primary-500">15M+</p>
+                        <p class="text-sm sm:text-base text-gray-600 font-medium mt-1">Total Visibility Impressions</p>
+                    </div>
+                </div>
+
+                <!-- Client Logos Placeholder -->
+                <div class="flex flex-wrap justify-center items-center space-x-8 space-y-4 mb-16 opacity-75">
+                    <img src="https://placehold.co/120x40/e0e7ff/4f46e5?text=DEFI+LABS" alt="Client Logo Placeholder" class="h-8 md:h-10 mt-4">
+                    <img src="https://placehold.co/120x40/e0e7ff/4f46e5?text=NFT+STUDIO" alt="Client Logo Placeholder" class="h-8 md:h-10">
+                    <img src="https://placehold.co/120x40/e0e7ff/4f46e5?text=DAO+PROJECT" alt="Client Logo Placeholder" class="h-8 md:h-10">
+                    <img src="https://placehold.co/120x40/e0e7ff/4f46e5?text=GAMEFI+INC" alt="Client Logo Placeholder" class="h-8 md:h-10">
+                    <img src="https://placehold.co/120x40/e0e7ff/4f46e5?text=INFRA+TECH" alt="Client Logo Placeholder" class="h-8 md:h-10">
+                </div>
+
+                <!-- Testimonial Placeholder -->
+                <div class="max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow-2xl border-l-4 border-primary-500">
+                    <blockquote class="text-xl md:text-2xl italic font-medium text-gray-800 mb-6">
+                        "Comt3.xyz transformed our community growth from a guessing game into a predictable, scalable asset. Their full-funnel approach is unparalleled in the Web3 space. We can finally focus 100% on product."
+                    </blockquote>
+                    <footer class="text-right">
+                        <p class="font-bold text-gray-900">- Alex R.</p>
+                        <p class="text-sm text-gray-500">CTO, Prominent DeFi Protocol</p>
+                    </footer>
+                </div>
+
+                <div class="text-center mt-12">
+                    <a href="https://calendly.com/justiceuwakwe/30min" target="_blank" class="cta-button inline-block text-white font-semibold px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 text-lg">
+                        Secure Your Growth - Book a Strategy Call
+                    </a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- 5. FOOTER -->
+    <footer id="contact" class="bg-gray-800 text-white py-12">
+        <div class="content-container">
+            <div class="grid md:grid-cols-4 gap-8 border-b border-gray-700 pb-8 mb-8">
+                <!-- Branding -->
+                <div>
+                    <h4 class="text-2xl font-extrabold mb-3">Comt3.<span class="text-primary-500">xyz</span></h4>
+                    <p class="text-gray-400 text-sm">Full-Funnel Web3 Marketing & Creator Management.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h5 class="font-semibold mb-4 text-primary-500">Resources</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#expertise" class="text-gray-400 hover:text-white transition-colors">Our Process</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Case Studies (Coming Soon)</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Web3 Audit Services</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal Links -->
+                <div>
+                    <h5 class="font-semibold mb-4 text-primary-500">Legal</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Final CTA -->
+                <div class="col-span-1 md:col-span-1">
+                    <h5 class="font-semibold mb-4 text-primary-500">Ready to Scale?</h5>
+                    <a href="https://calendly.com/justiceuwakwe/30min" target="_blank" class="cta-button text-white font-bold px-6 py-3 rounded-xl text-lg w-full transition-all duration-300 inline-block text-center">
+                        Book a Strategy Call
+                    </a>
+                </div>
+            </div>
+
+            <!-- Copyright and Disclaimer -->
+            <div class="text-center text-sm text-gray-500">
+                &copy; 2025 Comt3.xyz. All rights reserved. Web3 is rapidly evolving; our strategies are continuously optimized.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
